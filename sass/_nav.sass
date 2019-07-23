@@ -1,0 +1,74 @@
+.navigation
+    background-color: #373737
+    &-menu
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        &__item
+            list-style-type: none
+            padding-top: 16px
+            padding-bottom: 16px
+            position: relative
+            margin-right: 30px
+            &::after
+                content: ''
+                position: absolute
+                top: 15px
+                left: calc(100% + 15px)   
+                height: 25px
+                border-right: 1px dotted #ffffff
+                opacity: .2
+            &:last-child::after
+                border-right: none
+                margin-right: 0
+        &__link
+            color: #ffffff
+            text-decoration: none  
+            padding-top: 16px
+            padding-bottom: 16px
+            text-transform: uppercase
+            font-size: 12px
+            font-weight: 400
+            line-height: 22px
+            &:hover
+                color: #ff9d00
+            
+.drop
+    display: none
+    position: absolute
+    top: 40px
+    z-index: 2
+    background-color: grey
+    padding: 10px
+    &-item
+        list-style-type: none
+        padding: 10px
+        &__link
+            text-decoration: none
+            color: #ff9d00            
+            line-height: 32px
+            text-transform: uppercase
+            cursor: pointer
+        &:hover
+            text-shadow:  1px 1px 5px yellow , -1px -1px 5px
+            transition: all 0.6s
+
+.hide-hamb
+        display: none
+
+.trigger
+    position: absolute
+    clip: rect(0,0,0,0) 
+    &-label
+        display: block
+        width: 20px
+        height: 20px
+        cursor: pointer
+        background-image: url("../img/menu_filled-512.png")
+        background-size: cover
+    &:checked
+        ~.drop
+            display: block
+
+
+

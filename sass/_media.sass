@@ -1,0 +1,622 @@
+@media  (max-width : 576px)
+    .header
+        &-logo
+            background: #ff9d00 url('../img/Добрый_картон_2_mobile.png') center no-repeat
+            width: 35px
+            height: 35px
+            border-radius: 5px
+        &-contacts
+            &__phone
+                margin-left: 0
+                font-size: 14px
+                font-weight: 400
+                &:first-child
+                    border-right: none
+                    padding-right: 0
+                &s
+                    display: flex
+                    flex-direction: column                    
+            &__button       
+                margin-left: 14px
+                padding: 4px
+                img
+                    width: 20px
+                    height: 20px
+                    margin-right: 0    
+    
+    .main
+        padding-top: 50px
+        padding-bottom: 58px
+        &-text
+            text-align: center
+            &__title
+                margin-bottom: 9px
+                color: #ff9d00
+                font-size: 22px
+                font-weight: 700
+                line-height: 24px
+            &__subtitle
+                color: #ffffff
+                font-size: 18px
+                font-weight: 400
+                margin-bottom: 40px
+            &__form
+                text-align: center
+                background-color: inherit
+                padding: 0
+                border-radius: 7px
+                padding: 5px
+
+    .form
+        display: block
+        &-input
+            text-align: center
+            padding: 17px 60px
+            width: 100%   
+            margin-right: 0
+            font-size: 12px
+            margin-bottom: 13px       
+        &-title            
+            margin-right: 0
+            color: #ffffff
+            font-size: 14px
+            font-weight: 300
+            line-height: 20px
+            display: block
+            &__important
+                line-height: 38px
+                font-weight: 700
+                text-transform: uppercase         
+    
+            
+
+    .mobile-hidden
+        display: none
+
+    .thick
+        font-weight: 800             
+                    
+
+    .hide-hamb
+        display: block
+
+    .numbers-block
+        display: block
+        width: 100%
+        margin-bottom: 24px
+
+
+    .features
+        padding-top: 24px
+        padding-bottom: 64px
+        
+        &-blocks
+            flex-direction: center
+            justify-content: space-around
+        &-block
+            flex-direction: center
+            justify-content: space-around
+            display: flex
+            flex-basis: 100%
+            padding: 10px
+            max-width: 440px
+            &__title
+                font-size: 14px
+                margin-bottom: 10px
+            &__descr
+                font-size: 12px
+            &__img
+               
+                flex-basis: 14%
+            &__text
+                flex-basis: 72%
+
+        
+    .products
+        padding-top: 0
+        padding-bottom: 
+        &-block
+            margin-bottom: 22px
+            img
+                margin-bottom: 10px
+            &__title
+                margin-bottom: 17px
+
+    .section-title
+        font-size: 22px
+        font-weight: 700
+        &::after
+            display: none
+                
+
+        
+    .products-block__title
+        font-size: 18px
+        font-weight: 600
+
+    .offers
+        &-title
+            font-size: 20px
+            font-weight: 700
+            line-height: 24px
+            span
+                font-size: 16px
+        &-form
+            &__label
+                font-size: 14px
+                font-weight: 300
+                line-height: 30px
+            &__input
+                opacity: 0.7
+                color: #373737
+                font-size: 13px
+                font-weight: 300                
+                width: 100%
+                padding: 17px 67px
+
+    .products 
+        padding-bottom: 43px
+        &-block        
+        &__buttons
+            display: flex
+            justify-content: space-between   
+
+    .offers
+        width: 100%
+        order: 1   
+        &-form
+            &__mintext
+                font-size: 13px
+                font-weight: 300
+
+    .production
+        order: 2
+        width: 100%
+        padding-top: 28px
+        padding-bottom: 56px
+        &-slider
+            &__big
+                height: auto
+                position: relative
+                padding-right: 15px
+                padding-left: 15px
+            &__small
+               display: none
+        &-text
+            &__title
+                padding-right: 0
+                padding-left: 0
+                text-align: center
+            &__descr
+                padding-right: 15px
+                padding-left: 15px      
+                text-align: center 
+                font-size: 14px
+                font-weight: 300
+                p:not(:last-child)
+                    margin-bottom: 16px
+                p:last-child
+                    margin-bottom: 22px
+    
+              
+                    
+
+    .slider-button
+        width: 100%
+        height: 78px
+        background-color: #ff9d00
+        color:  #ffffff
+        margin-right: 15px
+        margin-left: 15px
+        &:first-child
+            margin-right: 5px
+        &.left
+            position: absolute
+            top: 50%
+            left: 0
+            width: 20px
+            transform: translateY(-50%)
+        &.right
+            position: absolute
+            top: 50% 
+            right: 0
+            width: 20px
+            transform: translateY(-50%)
+
+    .offerprodclient
+        display: flex
+        flex-flow: wrap
+        font-display: column
+
+    .clients
+        order: 3
+        &-block
+           
+            margin: 4px 2px 
+
+
+    .marginrow
+        margin-right: 0
+        margin-left: 0
+
+    .reviews
+        padding-bottom: 40px
+        &-slider
+            &__item
+                display: none                
+                &.active
+                    display: block
+                    margin: 0px auto
+                    
+        &-button                       
+            &__left
+                left: 0
+                background-color:   #d0cab0 
+                padding:  20px 5px          
+                &:hover
+                    left: -2px
+            &__right   
+                right: 0
+                background-color:   #d0cab0  
+                padding:  20px 5px        
+                &:hover
+                    right: -2px
+                    transition: right 0.2s
+
+
+
+@media (min-width: 576px) and (max-width: 767px) 
+    .navigation
+        &-menu
+            &__item
+                padding-top: 10px
+                padding-bottom: 10px
+                margin-right: 20px
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 10px
+                    left: calc(100% + 10px)   
+                    height: 20px
+                    border-right: 1px dotted #ffffff
+                    opacity: .2
+            &__link
+                color: #ffffff
+                text-decoration: none 
+                text-transform: uppercase
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                &:hover
+                    color: #ff9d00
+                    
+    .header
+        padding: 10px 0
+        &-logo
+            background: url('../img/Добрый_картон_2_вариант.png') center no-repeat
+            background-size: 100%
+            width: 120px
+            
+        &-contacts
+            &__phone
+                margin-left: 5px
+                padding-top: 3px
+                padding-bottom: 3px   
+                &:first-child
+                    padding-right: 5px
+                    margin-right: 5px
+                &s                    
+                    font-size: 14px
+                    
+                    
+            &__button       
+                margin-left: 10px
+
+    .button       
+        font-size: 12px
+        padding: 12px 16px
+        img
+            display: none
+        &-o
+
+
+    .main
+        padding-top: 45px
+        padding-bottom: 45px
+        &-img
+            display: none
+        &-text
+            &__title
+                text-align: center       
+                font-size: 36px
+                font-weight: 600
+                
+            &__subtitle
+                font-size: 24px
+                font-weight: 400
+                text-align: center
+            &__form
+                background-color: rgba(255,255,255,.4)
+                padding: 24px
+                border-radius: 7px
+            
+    .form
+        display: flex
+        margin-bottom: 12px
+        // justify-content: space-between
+        &-title
+            margin-right: 0px
+            font-size: 18px
+            line-height: 28px
+            margin-bottom: 20px
+            &__important
+                text-transform: uppercase
+                font-weight: 500
+        &-input
+            padding: 18px 120px 18px 19px
+        &-mintext
+            font-size: 12px
+
+    .numbers
+        display: flex
+        justify-content: space-between
+        &-block
+            display: block
+            text-align: center
+            &__title
+                color: #f39003
+                font-size: 22px
+                font-weight: 700
+                sup
+                    font-size: 16px
+            &__text
+                color: #373737            
+                font-size: 14px
+                font-weight: 500
+
+
+    .features
+        padding-top: 40px    
+        &-blocks            
+        &-block
+            flex-basis: 49%
+            padding: 10px
+            margin-bottom: 20px
+            &__title
+                font-weight: 500
+                font-size: 16px
+                margin-bottom: 10px
+            &__descr
+                font-size: 14px
+            &__img
+                margin-right: 11px
+                flex-basis: 61%
+
+    .products
+        padding-top: 40px
+
+    .production
+        padding-bottom: 40px
+        &-text               
+            &__title
+                padding: 20px 
+                text-align: center                
+            &__descr
+                font-size: 16px
+                font-weight: 300
+                line-height: 24px
+                margin-bottom: 25px
+                text-align: center
+
+    .reviews
+        &-slider
+            &__item
+                height: auto
+
+
+@media (min-width: 767px) and (max-width: 992px)
+        .navigation
+            &-menu
+                &__item
+                    padding-top: 10px
+                    padding-bottom: 10px
+                    margin-right: 20px
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 10px
+                        left: calc(100% + 10px)   
+                        height: 20px
+                        border-right: 1px dotted #ffffff
+                        opacity: .2
+                &__link
+                    color: #ffffff
+                    text-decoration: none 
+                    text-transform: uppercase
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 18px
+                    &:hover
+                        color: #ff9d00
+                        
+        .header
+            padding: 10px 0
+            &-logo
+                background: url('../img/Добрый_картон_2_вариант.png') center no-repeat
+                background-size: 100%
+                width: 160px
+                
+            &-contacts
+                &__phone
+                    margin-left: 5px
+                    padding-top: 3px
+                    padding-bottom: 3px   
+                    &:first-child
+                        padding-right: 5px
+                        margin-right: 5px
+                    &s                    
+                        font-size: 16px
+                        font-weight: 500
+                        
+                        
+                &__button       
+                    margin-left: 10px
+
+        .button       
+            font-size: 12px
+            padding: 12px 16px
+            img
+                display: none
+            &-o
+
+
+        .main
+            padding-top: 45px
+            padding-bottom: 45px
+            &-img
+                display: none
+            &-text
+                &__title
+                    text-align: center       
+                    font-size: 36px
+                    font-weight: 600
+                    
+                &__subtitle
+                    font-size: 24px
+                    font-weight: 400
+                    text-align: center
+                &__form
+                    background-color: rgba(255,255,255,.4)
+                    padding: 24px
+                    border-radius: 7px
+                
+        .form
+            display: flex
+            margin-bottom: 12px
+            // justify-content: space-between
+            &-title
+                margin-right: 65px
+                font-size: 18px
+                line-height: 28px
+                margin-bottom: 20px
+                &__important
+                    text-transform: uppercase
+                    font-weight: 500
+            &-input
+                padding: 18px 120px 18px 19px
+            &-mintext
+                font-size: 12px
+
+        .numbers
+            display: flex
+            justify-content: space-between
+            &-block
+                display: block
+                text-align: center
+                &__title
+                    color: #f39003
+                    font-size: 22px
+                    font-weight: 700
+                    sup
+                        font-size: 16px
+                &__text
+                    color: #373737            
+                    font-size: 14px
+                    font-weight: 500
+
+
+        .features
+            padding-top: 40px    
+            &-blocks            
+            &-block
+                flex-basis: 49%
+                padding: 10px
+                margin-bottom: 20px
+                &__title
+                    font-weight: 500
+                    font-size: 16px
+                    margin-bottom: 10px
+                &__descr
+                    font-size: 14px
+                &__img
+                    margin-right: 11px
+                    flex-basis: 61%
+
+        .products
+            padding-top: 40px
+
+        .production
+            padding-bottom: 40px
+            &-slider
+                &__big
+                    overflow: hidden
+                    img
+                        width: 100%
+            &-text               
+                &__title
+                    margin-top: 26px
+                    padding: 20px 
+                    text-align: center                
+                &__descr
+                    font-size: 16px
+                    font-weight: 300
+                    line-height: 24px
+                    margin-bottom: 25px
+                    text-align: center
+
+        .reviews
+            &-slider
+                &__item
+                    height: auto
+
+
+
+
+@media (min-width: 992px) and (max-width: 1200px)
+
+    .main
+        padding-top: 45px
+        padding-bottom: 45px
+        &-img
+            display: none
+        &-text
+            &__title
+                text-align: center       
+                font-size: 36px
+                font-weight: 600
+                    
+            &__subtitle
+                font-size: 24px
+                font-weight: 400
+                text-align: center
+            &__form
+                background-color: rgba(255,255,255,.4)
+                padding: 24px
+                border-radius: 7px
+    
+
+    .production
+        padding-bottom: 40px
+        &-slider
+           
+            &__big
+                overflow: hidden
+                img
+                    width: 100%
+                    
+        &-text               
+            &__title
+                
+                padding: 20px 
+                text-align: center                
+            &__descr
+                font-size: 16px
+                font-weight: 300
+                line-height: 24px
+                margin-bottom: 25px
+                text-align: center
+
+        .reviews
+            &-slider
+                &__item
+                    height: auto

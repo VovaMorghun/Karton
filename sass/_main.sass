@@ -1,0 +1,75 @@
+.main
+    position: relative
+    padding-top: 65px
+    padding-bottom: 60px
+    background:  url('../img/main-bg.jpg') center no-repeat
+    color: #fff
+    background-size: cover
+    z-index: 1
+    &::before
+        z-index: 0
+        position: absolute
+        content: ''
+        display: block
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.5)
+    &-img
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: block
+            border: 1px solid #ffffff
+            width: 390px
+            height: 390px
+            border-radius: 50%
+            transform: translate(10% , -90%)
+            z-index: -1
+    &-text
+        &__title
+            color: #ffffff        
+            font-size: 41px
+            font-weight: 700
+            margin-bottom: 12px
+        &__subtitle
+            margin-bottom: 27px
+            font-size: 28px
+            font-weight: 400
+        &__form
+            background-color: rgba(255,255,255,.4)
+            padding: 26px
+            border-radius: 7px
+            
+
+.form
+    display: flex
+    margin-bottom: 12px
+    // justify-content: space-between
+    &-title
+        margin-right: 87px
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+        margin-bottom: 30px
+        font-family: "Roboto Light", sans-serif
+        &__important
+            text-transform: uppercase
+            font-weight: 700
+    &-input
+        padding: 21px 130px 21px 19px
+        border-radius: 6px
+        border: none
+        outline: none
+        flex-basis: 58%
+        margin-right: 10px
+    &-mintext
+        color: #ffffff
+        font-size: 14px
+        font-weight: 300
+
+
+
+
